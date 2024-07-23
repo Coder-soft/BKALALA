@@ -1,0 +1,143 @@
+#upgrade_page_content {
+    font-size: 16px;
+    height: 1200px;
+    padding: 0px 50px;
+}
+
+#upgrade_example {
+    height: 210px;
+    margin: 50px auto;
+    font-size: 14px;
+    text-align: center;
+}
+
+#upgrade_example_trial {
+    float: left;
+}
+
+#upgrade_example_full {
+    float: right;
+}
+
+.upgrade_example_image {
+    display: block;
+    margin-bottom: 5px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+#upgrade_form {
+    width: 350px;
+    padding: 50px;
+    font-size: 22px;
+    background-image: url(../images/wood.png);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    margin: 50px auto;
+}
+
+.upgrade_option {
+    cursor: pointer;
+    margin-bottom: 20px;
+    -webkit-user-select: none;
+}
+
+.upgrade_checkbox {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: white;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    float: left;
+}
+
+.upgrade_checkbox_mark {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/check.png);
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    display: none;
+}
+
+#upgrade_donate_options {
+    margin: 10px 20px 20px 70px;
+}
+
+.upgrade_donate_change_button:active {
+    top: 8px;
+    box-shadow: none;
+}
+
+#upgrade_dec {
+    background-image: url(../images/upgrade_dec.png);
+}
+
+#upgrade_dec:hover {
+    background-image: url(../images/upgrade_dec_hover.png);
+}
+
+#upgrade_inc {
+    background-image: url(../images/upgrade_inc.png);
+}
+
+#upgrade_inc:hover {
+    background-image: url(../images/upgrade_inc_hover.png);
+}
+
+#upgrade_donate_box {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 30px;
+    
+}
+
+.upgrade_button {
+    position: relative;
+    margin: 50px auto 20px auto;
+    width: 250px;
+    height: 100px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.upgrade_button:active {
+    top: 3px;
+    box-shadow: none;
+}
+
+#upgrade_get_key_donate {
+    background-image: url(../images/upgrade_get_key_donate.png);
+}
+    
+#upgrade_get_key_donate:hover {
+    background-image: url(../images/upgrade_get_key_donate_hover.png);
+}
+
+#upgrade_get_key {
+    display: none;
+    background-image: url(../images/upgrade_get_key.png);
+}
+    
+#upgrade_get_key:hover {
+    background-image: url(../images/upgrade_get_key_hover.png);
+}
+
+#upgrade_donate_container {
+    width: 500px;
+    margin: 0 auto;
+}
+
+#upgrade_donate_key {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+#upgrade_donate_header {
+    margin-bottom: 10px;
+}
