@@ -128,7 +128,7 @@ nav ul li a:hover {
 .btn:hover {
     background-color: #c0392b;
     transform: translateY(-5px);
-    
+
 .box {
         background-color: #f4f4f4;
         padding: 20px;
@@ -164,21 +164,35 @@ nav ul li a:hover {
 }
 
 .feature-card {
-    background-color: #222;
+    border: 2px solid black;
     padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
+    margin: 10px;
+    text-align: center;
+    width: 300px; /* Adjust as needed */
+    height: auto; /* Allow height to adjust based on content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2d2d2d; /* Dark background to contrast with text */
+    color: white; /* White text for readability */
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
 }
 
-.feature-card:hover {
-    transform: translateY(-10px);
-    background-color: #333;
+.feature-card h3 {
+    font-size: 24px; /* Smaller font size for titles */
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    font-size: 16px; /* Smaller font size for descriptions */
+    line-height: 1.5;
+    margin: 0;
 }
 
 .about {
     padding: 50px;
-    background-color: #1a1a1a;
+    background-color: #1d1d1d;
     text-align: center;
 }
 
@@ -194,9 +208,17 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
-.about .image {
-    margin-top: 20px;
+.about .image img {
+    border-radius: 15px; /* Rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Initial subtle shadow */
 }
+
+.about .image img:hover {
+    transform: scale(1.05); /* Pop-out effect */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
 
 .join {
     padding: 50px;
@@ -238,4 +260,30 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
+}
+/* Animation Keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero h1, .hero p {
+    animation: fadeInUp 1s ease-out;
+    animation-fill-mode: forwards; /* Ensures the element remains in its final state after animation */
+    opacity: 1; /* Ensure the final opacity is set to 1 */
+}
+
+/* Delay animations for the paragraphs */
+.hero p:nth-of-type(1) {
+    animation-delay: 0.5s;
+}
+
+.hero p:nth-of-type(2) {
+    animation-delay: 1s;
 }

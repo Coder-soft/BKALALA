@@ -12,6 +12,56 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <style>
+
+    /* Feature Card Styles */
+    .feature-card {
+        border: 2px solid rgb(39, 38, 38);
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+        width: 300px; /* Adjust as needed */
+        height: 200px; /* Adjust as needed */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(31, 31, 31);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Initial shadow */
+    }
+
+    /* Hover Effect for Pop-Out */
+    .feature-card:hover {
+        transform: scale(1.05); /* Slightly increase the size */
+        box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow for pop-out effect */
+    }
+
+    /* About Image Hover Effect */
+    .about .image img {
+        border-radius: 15px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .about .image img:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+
+    
+        /* Hero Section Background */
+        .hero {
+            background-image: url('background.jpg'); /* Replace with your image path */
+            background-size: cover; /* Cover the entire section */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Do not repeat the background image */
+            color: rgb(255, 255, 255); /* Text color for readability */
+            padding: 100px 20px; /* Padding for spacing */
+            text-align: center; /* Center text horizontally */
+        }
+
+    </style>
 </head>
 <body>
     <header>
@@ -28,14 +78,15 @@
             </ul>
         </nav>
         <div class="header-buttons">
-            <a href="https://docs.example.com" target="_blank" class="header-btn">Docs</a>
-            <a href="https://help.example.com" target="_blank" class="header-btn">Help Us</a>
+            <a href="https://arcanecore.gitbook.io/docs.arcancecore" target="_blank" class="header-btn">Docs</a>
+            <a href="https://arcanecore.gitbook.io/docs.arcancecore/basics/helpus" target="_blank" class="header-btn">Help Us</a>
         </div>
     </header>
 
     <section id="home" class="hero">
         <h1>Welcome to Arcane Core</h1>
-        <p>Experience Minecraft like never before with custom items, armors, and much more to enhance gameplay.</p>
+        <p>Experience Minecraft like never before with custom items, armors, Structures.</p>
+        <p>and much more to enhance gameplay.</p>
         <a href="#join" class="btn">Join Now</a>
     </section>
 
@@ -43,15 +94,15 @@
         <center data-aos="fade-up" data-aos-duration="1000">
             <h2>Server Features</h2>
             <div style="display: flex; justify-content: center; flex-wrap: wrap;">
-                <div class="feature-card box" style="font-size: 35px;" data-aos="fade-up" data-aos-duration="750">
+                <div class="feature-card" style="font-size: 35px;" data-aos="fade-up" data-aos-duration="750">
                     <h3>Custom Items & Armors</h3>
                     <p>Discover and craft unique items that elevate your gameplay.</p>
                 </div>
-                <div class="feature-card box" style="font-size: 35px;" data-aos="fade-up" data-aos-delay="200" data-aos-duration="750">
+                <div class="feature-card" style="font-size: 35px;" data-aos="fade-up" data-aos-delay="200" data-aos-duration="750">
                     <h3>Enhanced Gameplay</h3>
                     <p>Enjoy a variety of quality-of-life tweaks that improve your Minecraft experience.</p>
                 </div>
-                <div class="feature-card box" style="font-size: 35px;" data-aos="fade-up" data-aos-delay="400" data-aos-duration="750">
+                <div class="feature-card" style="font-size: 35px;" data-aos="fade-up" data-aos-delay="400" data-aos-duration="750">
                     <h3>Active Community</h3>
                     <p>Join us and make history in this amazing Arcanic adventure.</p>
                 </div>
@@ -61,9 +112,7 @@
     
     <section id="about" class="about">
         <div class="content" data-aos="fade-right" data-aos-duration="1000">
-            <h2>About Arcane Core</h2>
-            <p>Arcane Core is a cutting-edge Minecraft server designed for players seeking a unique and immersive experience. With custom items, armors, and a host of game-enhancing features, we elevate your gameplay to the next level.</p>
-            <p>Our server evolves constantly, driven by community feedback and a commitment to excellence. Whether you're a seasoned veteran or a new player, Arcane Core offers something for everyone.</p>
+            
         </div>
         <div class="image" data-aos="fade-left" data-aos-duration="1000">
             <img src="about-image.png" alt="About Arcane Core">
@@ -76,8 +125,7 @@
             <p>Ready to embark on an epic journey? Connect to the Arcane Core server and immerse yourself in a world of endless possibilities.</p>
             <a href="#" class="btn">Join Now</a>
         </div>
-        <div class="join-image" data-aos="fade-up" data-aos-duration="1000">
-            <img src="join-image.png" alt="Join Arcane Core">
+        <a href="https://arcanecore.gitbook.io/docs.arcancecore" target="_blank" class="join-image" data-aos="fade-up" data-aos-duration="1000">Join Now!</a>
         </div>
     </section>
 
