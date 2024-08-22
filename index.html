@@ -5,6 +5,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arcane Core - Minecraft Server</title>
@@ -38,7 +41,7 @@
 
     /* About Image Hover Effect */
     .about .image img {
-        border-radius: 15px;
+        border-radius: 19px;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     }
@@ -48,8 +51,6 @@
         box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
     }
 
-
-    
         /* Hero Section Background */
         .hero {
             background-image: url('waves2.png'); /* Replace with your image path */
@@ -66,8 +67,8 @@
 <body>
     <header>
         <div class="logo">
-            <img src="AS.png" alt="Arcane Core Logo">
-            <span>Arcane Core</span>
+            <img src="logo.png" alt="Arcane Core Logo">
+            <span><b style="color: #e64545">Arcane Core </b></span>
         </div>
         <nav>
             <ul>
@@ -84,10 +85,11 @@
     </header>
 
     <section id="home" class="hero">
+        <img src="logo.png" alt="Arcane Core Logo" class="hero-logo">
         <h1>Welcome to Arcane Core</h1>
         <p>Experience Minecraft like never before with custom items, armors, Structures.</p>
         <p>and much more to enhance gameplay.</p>
-        <a href="#join" class="btn">Join Now</a>
+        <a href="#features" class="btn">Learn More</a>
     </section>
 
     <section id="features" class="features">
@@ -125,8 +127,8 @@
             <p>Ready to embark on an epic journey? Connect to the Arcane Core server and immerse yourself in a world of endless possibilities.</p>
             <a href="https://discord.gg/GnsFmkYGVP" class="btn">Join Now</a>
         </div>
-        <a href="https://discord.gg/GnsFmkYGVP" target="_blank" class="join-image" data-aos="fade-up" data-aos-duration="1000">
-        </div>
+        <a target="_blank" class="join-image" data-aos="fade-up" data-aos-duration="1000">
+        </a>
     </section>
 
     <footer>
