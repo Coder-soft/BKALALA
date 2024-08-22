@@ -287,3 +287,30 @@ footer {
 .hero p:nth-of-type(2) {
     animation-delay: 1s;
 }
+  
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #181825; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e64545; 
+  border-radius: 10px;
+  transition: all 0.3s ease 0s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e64545; 
+  transition: all 0.3s ease 0s;
+
+}
+body {
+    overflow-x: hidden;
+}
