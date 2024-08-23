@@ -81,3 +81,18 @@ footer {
     background-color: #2a2a2a;
     color: #ffffff;
 }
+.redirect-button {
+    background-color: #e64545;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.redirect-button:hover {
+    background-color: #c73535;
+}
